@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  jenkins:
+    image: jenkins/jenkins
+    container_name: jenkins
+    ports:
+      - "8080:8080"
+    volumes:
+      - /var/jenkins_home:/var/jenkins_home
+    environment:
+      - CASC_JENKINS_CONFIG=/var/jenkins_home/casc_configs/casc.yaml
+      - JAVA_OPTS=-Djenkins.install.runSetupWizard=false
+volumes:
+  jenkins_home:

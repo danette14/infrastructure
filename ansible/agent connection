@@ -1,0 +1,2 @@
+curl -sO http://ec2-52-35-88-245.us-west-2.compute.amazonaws.com:8080/jnlpJars/agent.jar
+java -jar agent.jar -url http://ec2-52-35-88-245.us-west-2.compute.amazonaws.com:8080/ -secret 9b1d5dff04054b35d0b5337ddd4ed8b2f3c8eecc6f866fd4a47f18cbf0d679b7 -name docker -webSocket -workDir "/var/jenkins_home"
